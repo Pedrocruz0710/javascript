@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual sua nacionalidade?</title>
+</head>
+<body>
+    <h1>Qual sua nacionalidade?</h1>
+    <input type="search" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Diagnostico" id="botao" onclick="Diagnostico()">
+    <div id="result">
+
+    </div>
+
+    <script>
+        function Diagnostico(){
+            var resposta = window.document.getElementById('nacionalidade').value//.value pega o conteúdo digitado ou selecionado em um campo do formulário.
+            var result = window.document.getElementById('result')
+            result.innerHTML = `Você nasceu no ${resposta}`
+            if (resposta == 'Brasil'){
+                result.innerHTML += ', Você é Brasileiro'
+            } else {
+                result.innerHTML += ', Você é Estrangeiro'
+            }
+
+        }
+        
+    </script>
+</body>
+</html>

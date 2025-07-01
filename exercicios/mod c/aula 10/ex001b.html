@@ -13,24 +13,47 @@
             text-align: center;
             line-height: 200px;
         }
+        /*O que são os Eventos do DOM?
+No contexto do desenvolvimento web com JavaScript, o DOM (Document Object Model) é uma representação estruturada do seu documento HTML, permitindo que a linguagem de script acesse e manipule o conteúdo, a estrutura e o estilo da página.
+
+Os eventos do DOM são como "coisas que acontecem" nos elementos da sua página web, e que o JavaScript pode "escutar" e responder a elas. Imagine que você tem um botão em uma página. Quando um usuário clica nesse botão, isso é um evento! Outros exemplos comuns de eventos incluem:
+
+Clique do mouse: click
+
+Mouse sobre um elemento: mouseover
+
+Mouse saindo de um elemento: mouseout
+
+Teclado digitado: keydown, keyup, keypress
+
+Envio de formulário: submit
+
+Carregamento da página: load
+
+Redimensionamento da janela: resize
+
+Mudança em um campo de formulário: change
+
+Quando um evento acontece, o JavaScript pode executar uma função específica (chamada de manipulador de evento ou event handler) que você definiu para lidar com ele. */
+
     </style>
 </head>
 <body>
     <div id="area">interaja... </div>
     <script>
-        var area = window.document.getElementById('area')
-        area.addEventListener('click', clicar)
+        var area = window.document.getElementById('area')//atribuiu o id da div a variavel area.
+        area.addEventListener('click', clicar)// adicionando o evento 'click', com nome clicar para atribuir a função
         area.addEventListener('enter', entrar)
-        area.addEventListener('mouseenter', entrar)
-        area.addEventListener('mouseout', sair)
+        area.addEventListener('mouseenter', entrar)//adicionou o evento 'mouseenter' que representa a entrada do mouse na div, e nomeou de entrar para atribuir a uma functiom
+        area.addEventListener('mouseout', sair)//adicionou o evento 'mouseout' que registra a saida do mouse do campo da div, e a nomeou como sair, para atribuir as funções
 
-        function clicar(){
+        function clicar(){//função de clicar
             area.innerText='Clicou'
             area.style.background = 'black'
             area.style.color = 'white'
         }
 
-        function entrar() {
+        function entrar() { //nunca se esqueca do () 'entre parenteses, para atribuir um evento função.'
             area.innerText = 'entrou'
             area.style.background = 'blue'
             area.style.color = 'white'

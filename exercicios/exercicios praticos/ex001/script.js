@@ -1,5 +1,5 @@
 function carregar(){
-var fundo=window.document.getElementById('foto')//variavel representando a div com id foto, neste caso eu ultizei ela para fazer um texte para mudar a cor da div.
+var fundo=window.document.getElementById('foto')//variavel representando a div com id foto, neste caso eu ultizei ela para fazer um teste para mudar a cor da div.
 var msg = window.document.getElementById('msg')// Esta variavel atribui a div msg
 var img = window.document.getElementById('imagem')// esta variavel neste caso esta atribuimdo a tag '<img>' por meio do id 'imagem'
 var date = new Date()

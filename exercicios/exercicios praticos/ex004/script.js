@@ -1,4 +1,3 @@
-
 function carregar(){ // função que atribui o codigo ao elemento onclick
     var numero = document.querySelector('input#numero') // regista o dado do input
     var valnumero = Number(numero.value) // transforma o dado para numero, nunca esqueca do '.value', pois este dado ainda nao tem valor declarado
